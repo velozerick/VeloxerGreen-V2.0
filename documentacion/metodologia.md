@@ -22,6 +22,22 @@ El enfoque de prototipado parte del desarrollo rápido de una versión funcional
 | **6. Pruebas finales e integración completa** | El sistema se somete a pruebas de integración y validación global, evaluando su operación autónoma 24/7, la sincronización con la app y el registro de datos históricos. |
 | **7. Documentación técnica y preparación para despliegue** | Se genera la documentación formal, incluyendo diagramas, manuales, plan de pruebas y estructura del sistema, preparando su posible implementación en ambientes reales o comercialización. |
 
+
+---
+
+### **Aplicación del Prototipado en Hardware y Software**
+
+El modelo de prototipado será aplicado de manera integral en:
+
+- **Hardware**: Validación y optimización de módulos físicos (ESP32, sensores, relés, bombas de agua, RTC).
+- **Software**: Desarrollo iterativo de la aplicación móvil de gestión de cultivos, incluyendo interfaz de usuario, control remoto y notificaciones inteligentes.
+- **Integración IoT**: Futuras expansiones hacia conectividad con plataformas en la nube y monitoreo remoto.
+
+Este enfoque garantiza que tanto los componentes físicos como los digitales evolucionen de manera coordinada, asegurando la coherencia, funcionalidad y eficiencia del sistema completo.
+
+---
+
+
 ### **Ventajas del modelo de prototipado para VeloxerGreen**
 
 - **Validación temprana** de las funciones esenciales del sistema (riego automatizado, monitoreo, sensado).
