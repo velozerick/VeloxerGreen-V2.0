@@ -31,15 +31,14 @@ Este proyecto integra **hardware embebido** (ESP32, sensores de humedad, tempera
 
 ---
 
-# Documentación de VeloxerGreen v2.0
+## 📄 Documentación Detallada
 
-## Índice
+- [Objetivos del Proyecto](documentacion/objetivos.md)
+- [Metodología de Desarrollo](documentacion/metodologia.md)
+- [Requerimientos del Sistema](documentacion/requerimientos.md)
+- [Arquitectura del Sistema](documentacion/arquitectura.md)
+- [Modelado del Sistema (UML + ERD)](documentacion/modelado_sistema.md)
 
-1. [Objetivos del Proyecto](objetivos.md)
-2. [Metodología de Desarrollo](metodologia.md)
-3. [Requerimientos del Sistema](requerimientos.md)
-4. [Arquitectura del Sistema](arquitectura.md)
-5. [Modelado del Sistema](modelado_sistema.md)
 
 ---
 
