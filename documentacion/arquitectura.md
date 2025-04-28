@@ -1,4 +1,4 @@
-## **5. Arquitectura General del Sistema**
+## **. Arquitectura General del Sistema**
 
 ### Descripción General
 
