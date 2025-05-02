@@ -1,4 +1,5 @@
-![063f7753-464d-48e0-8ecb-a400c4b2d949.png](attachment:04ee6740-a05b-4315-a080-2128b03487da:063f7753-464d-48e0-8ecb-a400c4b2d949.png)
+
+![CASOS_DE_USO](https://github.com/user-attachments/assets/22799a75-6a42-41e8-ba68-69c89268d443)
 
 El siguiente diagrama representa los principales casos de uso del sistema **VeloxerGreen** desde la perspectiva del usuario. Está basado en los requerimientos funcionales identificados y muestra la interacción entre el actor principal (el usuario) y las funcionalidades del sistema.
 
