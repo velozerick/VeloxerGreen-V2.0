@@ -54,6 +54,7 @@ El diagrama define cómo se relacionan entre sí estas entidades, asegurando la 
 
 
 
+![clases](https://github.com/user-attachments/assets/87a5497c-7d72-4b4e-81fe-46330efca393)
 
 
 
