@@ -103,3 +103,17 @@ Este diagrama representa la secuencia de eventos que ocurren durante la ejecuci�
 6. El evento es registrado localmente (hora, duración, cultivo).
 7. Si hay conexión a Internet, también se envía a Firebase y se notifica a la app del usuario.
 8. Si no se riega, se guarda el intento fallido para análisis posterior.
+
+   
+
+![flujo_ra](https://github.com/user-attachments/assets/1ebefb55-f583-4da4-b7ce-fad4332abd70)
+
+
+
+
+Este diagrama representa la lógica de decisión que el sistema sigue para ejecutar el riego automático de un cultivo en función de una serie de condiciones previamente configuradas. El ciclo inicia cuando el **RTC (DS3231)** detecta que se ha alcanzado la hora programada. A partir de ahí, el **ESP32** consulta los parámetros configurados del cultivo (día, hora, humedad mínima/máxima, duración) y solicita la humedad actual al sensor correspondiente.
+
+Si se cumplen las condiciones para regar, el sistema activa una válvula (servo) y un relé que controla la bomba de agua por el tiempo configurado. Al finalizar, se desactivan los actuadores, se registra el evento localmente, y si existe conexión a internet, se sincroniza con Firebase y se notifica al usuario desde la app.
+
+Este flujo permite que el sistema **tome decisiones inteligentes** adaptándose a las condiciones reales del cultivo y no solo al calendario de riego, optimizando así el uso del agua y el cuidado del cultivo.
+
