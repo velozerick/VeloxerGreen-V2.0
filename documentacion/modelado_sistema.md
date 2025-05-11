@@ -66,3 +66,40 @@ El diagrama define cómo se relacionan entre sí estas entidades, asegurando la 
 El siguiente diagrama de clases representa la estructura lógica de los objetos principales dentro del sistema VeloxerGreen, especialmente desde el punto de vista del desarrollo de la aplicación móvil. Este modelo permite visualizar cómo se organizan las clases, sus atributos, métodos y relaciones, facilitando así el diseño orientado a objetos y la implementación eficiente del sistema.
 
 Cada clase define una entidad central en la gestión del riego inteligente, como usuarios, cultivos, sensores y sesiones de riego. Las relaciones entre clases (asociación, agregación o composición) reflejan la forma en que interactúan los componentes del sistema y cómo fluye la información.
+
+
+
+
+
+
+![secuencial](https://github.com/user-attachments/assets/4b6b5379-f956-4b3f-9f88-85e68e33ad50)
+
+Este diagrama representa la secuencia de eventos que ocurren durante la ejecución automática del riego de un cultivo, gestionada por el microcontrolador ESP32. El proceso inicia con una señal del módulo RTC a la hora programada y considera tanto el día como el nivel de humedad del suelo antes de decidir si activar el riego.
+
+**Participantes involucrados:**
+
+- RTC (DS3231)
+- ESP32 (Controlador)
+- BaseDatosLocal (EEPROM o almacenamiento embebido)
+- SensorHumedad (del cultivo)
+- ServoVálvula (válvula para apertura del flujo de agua)
+- ReléBomba (control de la bomba de agua)
+- Firebase (registro remoto)
+- AppUsuario (aplicación para el usuario final)
+
+**Flujo de eventos:**
+
+1. El RTC emite un evento programado a la hora establecida.
+2. El ESP32 consulta la configuración almacenada localmente: día de riego, hora, humedad mínima y duración.
+3. El ESP32 solicita al sensor de humedad el valor actual.
+4. Según la lógica:
+    - Si es el día y la hora programados **y** la humedad es baja, se inicia el riego.
+    - Si no es el día de riego pero la humedad es críticamente baja y el próximo evento está muy lejos, también se activa.
+    - Si no se cumplen las condiciones, el evento se cancela y se registra como fallido.
+5. Si se riega:
+    - El ESP32 activa la válvula correspondiente.
+    - Enciende la bomba mediante el relé por la duración configurada.
+    - Luego, apaga ambos dispositivos.
+6. El evento es registrado localmente (hora, duración, cultivo).
+7. Si hay conexión a Internet, también se envía a Firebase y se notifica a la app del usuario.
+8. Si no se riega, se guarda el intento fallido para análisis posterior.
