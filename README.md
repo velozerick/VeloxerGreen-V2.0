@@ -38,6 +38,7 @@ Este proyecto integra **hardware embebido** (ESP32, sensores de humedad, tempera
 - [Requerimientos del Sistema](documentacion/requerimientos.md)
 - [Arquitectura del Sistema](documentacion/arquitectura.md)
 - [Modelado del Sistema (UML + ERD)](documentacion/modelado_sistema.md)
+- [Diseño de Interfaz y Mockups](documentacion/interfaz_mockups.md)
 
 
 ---
