@@ -24,6 +24,10 @@ Pantalla de bienvenida tras el inicio de sesión. Muestra accesos directos a las
 **Objetivo:**  
 Servir como panel de control inicial desde donde el usuario accede a todas las funciones de la app.
 
+
+![image](https://github.com/user-attachments/assets/17e0c031-b686-4376-b2d9-a32a37bacf3e)
+
+
 ---
 
 ## 🌱 Pantalla de Cultivos
