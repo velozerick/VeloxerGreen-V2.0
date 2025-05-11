@@ -31,7 +31,7 @@ Este proyecto integra **hardware embebido** (ESP32, sensores de humedad, tempera
 
 ---
 
-## 📄 Documentación Detallada
+## 📄 Documentación 
 
 - [Objetivos del Proyecto](documentacion/objetivos.md)
 - [Metodología de Desarrollo](documentacion/metodologia.md)
