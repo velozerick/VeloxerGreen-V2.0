@@ -1,4 +1,4 @@
-# 🖌️ Mockups y Prototipos – VeloxerGreen
+# Mockups y Prototipos – VeloxerGreen
 
 Este documento presenta los mockups de la aplicación móvil **VeloxerGreen**, diseñada para permitir la gestión remota e intuitiva de un sistema de riego inteligente. El objetivo de estos prototipos es anticipar la estructura visual y funcional de la interfaz antes de su desarrollo en Android Studio.
 
